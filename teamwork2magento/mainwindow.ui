@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>784</width>
+    <height>736</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>teamwork2magento 2.0</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="importBox">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use this area to select and upload a Teamwork product export file for editing.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="title">
+       <string>Import</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="importLabel">
+         <property name="text">
+          <string>Select a Teamwork export file (must be in *.csv format):                                                    </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="importBrowseButton">
+         <property name="text">
+          <string>Browse...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="importUploadData">
+         <property name="text">
+          <string>Upload Data</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="importDisplayPreview">
+         <property name="text">
+          <string>Display Preview</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLineEdit" name="importLineEdit">
+         <property name="toolTip">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Specify a valid file path in this field and press enter, or use the browse utility.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="importSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QGroupBox" name="exportBox">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use this area to select a file path to export the data you have edited as a *.csv file.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="title">
+       <string>Export</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="2">
+        <widget class="QPushButton" name="exportBrowse">
+         <property name="text">
+          <string>Browse...</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="exportPreview">
+         <property name="text">
+          <string>Display Preview</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="exportLabel">
+         <property name="text">
+          <string>Save file as (at the specified location as a *.csv file):                                                          </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLineEdit" name="exportLineEdit"/>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="exportGenerate">
+         <property name="text">
+          <string>Generate Export</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <spacer name="exportSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QGroupBox" name="editBox">
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use this area to edit product attributes.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="title">
+       <string>Editing</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="3" column="3">
+        <widget class="QTextEdit" name="metaDescriptionTextEdit"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="nameLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Name:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="shortDescriptionLineEdit"/>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="metaKeywordLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Meta_Keyword:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QLineEdit" name="metaKeywordLineEdit"/>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="descriptionLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Description:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QTextEdit" name="descriptionTextEdit"/>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLabel" name="metaDescriptionLabel">
+         <property name="text">
+          <string>Meta_Description:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLineEdit" name="metaTitleLineEdit"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="nameLineEdit"/>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="metaTitleLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Meta_Title:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="shortDescriptionLabel">
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;right&quot;&gt;Short Description:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QGroupBox" name="sizeQtyBox">
+         <property name="title">
+          <string>Size and Quantity</string>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_2">
+          <item row="1" column="0">
+           <widget class="QLabel" name="qtyLabel">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Quantity:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0">
+           <widget class="QLabel" name="sizeLabel">
+            <property name="text">
+             <string>Size:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="updateQtyButton">
+            <property name="text">
+             <string>Update Quantity</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLineEdit" name="qtyLineEdit"/>
+          </item>
+          <item row="0" column="1" colspan="2">
+           <widget class="QComboBox" name="sizeComboBox"/>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0" colspan="2">
+        <widget class="QGroupBox" name="productBox">
+         <property name="title">
+          <string>Product Selection</string>
+         </property>
+         <layout class="QFormLayout" name="formLayout">
+          <item row="0" column="0">
+           <widget class="QLabel" name="currentItemLabel">
+            <property name="text">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Current Item:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QComboBox" name="itemComboBox"/>
+          </item>
+          <item row="1" column="1">
+           <widget class="QPushButton" name="updateInfoButton">
+            <property name="text">
+             <string>Update Info</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <spacer name="importEditSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="3" column="0">
+     <spacer name="editExportSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>784</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+    <addaction name="actionAbout"/>
+    <addaction name="actionTutorial"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionTutorial">
+   <property name="text">
+    <string>Tutorial</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>importLineEdit</tabstop>
+  <tabstop>importBrowseButton</tabstop>
+  <tabstop>importUploadData</tabstop>
+  <tabstop>importDisplayPreview</tabstop>
+  <tabstop>itemComboBox</tabstop>
+  <tabstop>updateInfoButton</tabstop>
+  <tabstop>nameLineEdit</tabstop>
+  <tabstop>shortDescriptionLineEdit</tabstop>
+  <tabstop>descriptionTextEdit</tabstop>
+  <tabstop>metaTitleLineEdit</tabstop>
+  <tabstop>metaKeywordLineEdit</tabstop>
+  <tabstop>metaDescriptionTextEdit</tabstop>
+  <tabstop>sizeComboBox</tabstop>
+  <tabstop>qtyLineEdit</tabstop>
+  <tabstop>updateQtyButton</tabstop>
+  <tabstop>exportLineEdit</tabstop>
+  <tabstop>exportBrowse</tabstop>
+  <tabstop>exportGenerate</tabstop>
+  <tabstop>exportPreview</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
